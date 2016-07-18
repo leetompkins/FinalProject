@@ -1,6 +1,8 @@
 # FinalProject
 MileStoneCST100_Project_NFL
-StoryBoard (FlowChart)
+
+
+StoryBoard-FlowChart
   - Flow Chart Created 
   - Has visual component 
   - Revised July 17 to show new funcionality
