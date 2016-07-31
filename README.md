@@ -14,6 +14,7 @@ Abstract NFL Player class Created
   - constructors created with specified args 
       - Two subclasses, OffensivePlayer and DefensivePlayer 
       - class properties, and methods inherited 
+
 NFL Player Creation 
   - Players added to array on launch 
   - Players created with set parameteres 
