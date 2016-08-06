@@ -34,6 +34,10 @@ How it was done:
 - Specific stats are shown on the seperate list for the selected player by invoking methods to return Strings for the stats ObservableList<String> 
 - The initial program image is shown for 4 seconds by invoking the Thread.sleep(4000) before the main login page is added to the primary scene 
 - Basic visual Structure is primaryStage > MainTabs > Tab > BorderPane > (ListView, buttons, labels, panes, boxes, ect....) 
+ 
+
+Source .java files and images are in the Source folder, 
+The runnable jar and required resources are in the Applet folder
 
 
 
