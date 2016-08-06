@@ -16,6 +16,34 @@ class OffensivePlayer extends NFLPlayer {
 	private int careerInterceptionsThrown;
 	private int careerCarries;
 	//General No Args Constructor
+	
+	
+	@Override
+	public String toString2(){
+		return "2015 Season Recpetions: " + careerReceptions;
+	}
+	@Override
+	public String toString3(){
+		return "2015 Season Yards: " + careerYards;
+	}
+	@Override
+	public String toString4(){
+		return "2015 Season Touchdowns: " + careerTouchdowns;
+	}
+	@Override
+	public String toString5(){
+		return "2015 Season Interceptions Thrown: " + careerInterceptionsThrown;
+	}
+	@Override
+	public String toString6(){
+		return "2015 Season Carries: " + careerCarries;
+	}
+	
+	
+	
+	
+	
+	
 	public OffensivePlayer(){
 		
 	}
@@ -31,12 +59,14 @@ class OffensivePlayer extends NFLPlayer {
 		this.careerYards = careerYards;
 		this.careerTouchdowns = careerTouchdowns;
 	}
-	public OffensivePlayer(String position, String name, int careerTouchdowns, int careerInterceptionsThrown, int careerYards){
+	public OffensivePlayer(String position, String name, int careerTouchdowns, int careerInterceptionsThrown, int careerYards, int carries, int receptions){
 		this.position = position;
 		this.name = name;
 		this.careerTouchdowns = careerTouchdowns;
 		this.careerInterceptionsThrown = careerInterceptionsThrown;
 		this.careerYards = careerYards;
+		this.careerCarries = carries;
+		this.careerReceptions = receptions;
 	}
 	public OffensivePlayer(String position, String name) {
 		this.position = position;
@@ -92,31 +122,32 @@ class OffensivePlayer extends NFLPlayer {
 	 }
 	// Celebrate for player celebration upon being drafted
 	 @Override
-		void celebrate() {
+		public String celebrate() {
 			int randomNum = 0; 
 			randomNum = (int) (Math.random() * 4);
+			String saying = "";
 			switch (randomNum) {
 				case 0: {
-					System.out.println(name + " celebrates his draft and shouts with joy!");
+					saying = name + " celebrates his draft and shouts with joy!";
 					break;
 				}
 				case 1: {
-					System.out.println(name + " celebrates his draft and does a happy backflip!");
+					saying = name + " celebrates his draft and does a happy backflip!";
 					break;
 			}
 				case 2: {
-					System.out.println(name + " celebrates his draft and dances with joy!");
+					saying = name + " celebrates his draft and dances with joy!";
 					break;
 				}
 				case 3: {
-					System.out.println(name + " celebrates his draft and cries tears of joy!");
+					saying = name + " celebrates his draft and cries tears of joy!";
 					break;
 				}
 				case 4: {
-					System.out.println(name + " celebrates his draft and does his famous touchdown dance!");
+					saying = name + " celebrates his draft and does his famous touchdown dance!";
 					break;
 				}
 			}
-			return;
+			return saying;
 		}
 }
